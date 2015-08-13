@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Compras";
+}
+              
+@using (Html.BeginForm("Salvar","Compras"))
+{
+    
+<h2>Informe a Data de sua compra</h2>
+
+<label>Compra Realizada em </label>
+    <input type="date" name="data"/>
+    <button type="submit" value="Enviar" class="btn btn-primary">Salvar</button>
+}
+

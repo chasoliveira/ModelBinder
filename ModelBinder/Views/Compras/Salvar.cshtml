@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ModelBinder.Models.Compras>
+
+@{
+    ViewBag.Title = "Salvar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Salvar</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+        </tr>
+    }
+
+</table>
